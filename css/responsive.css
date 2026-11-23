@@ -1,0 +1,75 @@
+@media (max-width: 950px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 140px;
+    }
+
+    .hero-line {
+        margin: 25px auto;
+    }
+
+    .hero-buttons,
+    .hero-details {
+        justify-content: center;
+    }
+
+    .hero-visual {
+        margin-top: 70px;
+        transform: scale(.85);
+    }
+
+    .scroll-indicator {
+        display: none;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    .hero {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .hero-visual {
+        transform: scale(.7);
+        margin: 20px 0;
+    }
+
+    .dashboard-section {
+        padding: 70px 6%;
+    }
+
+    .dashboard-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dashboard-card {
+        min-height: 200px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-container {
+        width: 90%;
+        padding-top: 120px;
+    }
+
+    .action-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-details {
+        gap: 25px;
+    }
+}

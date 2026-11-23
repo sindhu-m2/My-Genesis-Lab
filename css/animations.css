@@ -1,0 +1,68 @@
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes rotateReverse {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0deg); }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotateX(15deg) rotateY(-20deg);
+    }
+    50% {
+        transform: translateY(-20px) rotateX(25deg) rotateY(20deg);
+    }
+}
+
+@keyframes loader {
+    0% { transform: scaleX(.2); opacity: .4; }
+    50% { transform: scaleX(1); opacity: 1; }
+    100% { transform: scaleX(.2); opacity: .4; }
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: .5; }
+    50% { opacity: 1; }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-content {
+    animation: appear 1s ease both;
+}
+
+.hero-visual {
+    animation: appear 1.2s ease both;
+}
+
+.dashboard-card {
+    animation: appear .8s ease both;
+}
+
+.dashboard-card:nth-child(2) {
+    animation-delay: .1s;
+}
+
+.dashboard-card:nth-child(3) {
+    animation-delay: .2s;
+}
+
+.dashboard-card:nth-child(4) {
+    animation-delay: .3s;
+}
+
+.dashboard-card:nth-child(5) {
+    animation-delay: .4s;
+}
